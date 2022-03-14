@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: Bastia;
+  src: url("./bastia.otf") format("opentype");
+}
+@font-face {
+  font-family: NewOrderBold;
+  src: url("./no-bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: NewOrder;
+  src: url("./no.ttf") format("truetype");
+}
+body {
+  background-color: #f4d920;
+}
+
+img {
+  width: 100%;
+}
+
+.cicc-lp {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.cicc-lp .people {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.cicc-lp .people img {
+  width: 100%;
+}
+.cicc-lp .squares {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 991px) {
+  .cicc-lp .squares {
+    grid-template-columns: 1fr;
+  }
+}
+.cicc-lp .square {
+  aspect-ratio: 1;
+  padding: 5em;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .cicc-lp .square {
+    padding: 2em;
+  }
+}
+.cicc-lp .quote {
+  color: #d65420;
+  font-family: Bastia;
+  font-size: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
+  line-height: 1.2em;
+}
+.cicc-lp .quote img {
+  max-width: 4em;
+  margin-top: 0.5em;
+}
+.cicc-lp .form {
+  font-family: NewOrder;
+  color: #285161;
+  padding: 3em 0;
+}
+@media (max-width: 991px) {
+  .cicc-lp .form {
+    padding: 3em 1em;
+  }
+}
+.cicc-lp .form h3 {
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.4em;
+  margin-bottom: 1em;
+}
+.cicc-lp .form #mc_embed_signup_scroll .mc-field-group {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 991px) {
+  .cicc-lp .form #mc_embed_signup_scroll .mc-field-group {
+    width: 33%;
+    float: left;
+  }
+}
+.cicc-lp .form #mc_embed_signup_scroll .mc-field-group input {
+  width: 90%;
+}
+@media (max-width: 991px) {
+  .cicc-lp .form #mc_embed_signup_scroll .mc-field-group input {
+    width: 100%;
+  }
+}
+.cicc-lp .form input[type=submit] {
+  background-color: #e30321;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: NewOrderBold;
+  width: initial;
+  float: right;
+  margin-right: 4.4%;
+  margin-top: 1em;
+}
+.cicc-lp .form .mc-field-group {
+  display: grid;
+  flex-direction: column;
+}
+.cicc-lp .form input {
+  padding: 1em;
+  width: 100%;
+}
+.cicc-lp .text {
+  font-family: NewOrder;
+  color: #285161;
+  font-size: 2em;
+  line-height: 1.4em;
+}
+.cicc-lp .text strong {
+  font-family: NewOrderBold;
+}
+.cicc-lp .text h2 {
+  font-size: 1.2em;
+  font-family: NewOrderBold;
+  margin-bottom: 1em;
+}
+.cicc-lp .text a {
+  color: #e30321;
+  font-family: NewOrderBold;
+  text-decoration: none;
+}
+.cicc-lp .cta {
+  font-size: 2.7em;
+  font-family: NewOrder;
+  max-width: 7em;
+  margin: 0 auto;
+  color: #285161;
+  line-height: 1.4em;
+}
+.cicc-lp .cta a {
+  position: relative;
+  top: 0.7em;
+}
+.cicc-lp .cta strong {
+  color: #e30321;
+  font-family: NewOrderBold;
+}
+.cicc-lp .bg-pattern {
+  background-image: url("./children.png");
+  background-size: cover;
+}
+.cicc-lp .bg-hands {
+  background-image: url("./hands.png");
+  background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
